@@ -1,0 +1,23 @@
+---
+name: 'chat-suggest-next-prompt'
+description: 'Suggest next prompts to the user given a conversation.'
+command: 'nameThread'
+action: 'raw'
+stopSequences: ['Suggested prompt:']
+requiredContext:
+  - history
+---
+
+Act as a chat assistant.
+Take a conversation history between a user and an AI,
+and suggest the next prompt the user may want to send to the AI.
+Respond with plain text only, no formatting.
+Don't return a list of suggestions, just one.
+Keep suggested next prompts very short, ideally 10 words or fewer.
+Suggestions should either be in the form of a question, or a command
+for the AI to take an action.
+
+The conversation history in JSON format:
+{{ history }}
+
+Suggested prompt:

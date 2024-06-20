@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Monospace config file",
+  "description": "Schema for the monospace configuration file",
+  "type": "object",
+  "properties": {
+    "previews": {
+      "description": "list of previews",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/preview"
+      }
+    }
+  },
+  "$defs": {
+    "preview": {
+      "type": "object",
+      "description": "configuration for a preview",
+      "required": ["id", "manager"],
+      "properties": {
+        "env": {
+          "description": "any env vars that need to be set",
+           "type": "object"
+        },
+        "command": {
+          "type": "array",
+          "item": { "type": "string" },
+          "description": "command to start the server. use the $PORT variable to provide the port. Eg npm run start -- PORT=$PORT"
+        },
+        "manager": {
+          "type": "string",
+          "enum": ["web", "flutter"],
+          "description": "Kind of project - either web or flutter"
+        },
+        "id": {
+          "type": "string",
+          "enum": ["web", "android"],
+          "description": "The name of the preview - can be web or flutter"
+        }
+      }
+    }
+  }
+}

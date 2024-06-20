@@ -1,0 +1,12 @@
+---
+name: 'chat-create'
+description: 'Write new code'
+command: 'generate'
+availability: ['chat']
+action: 'chat'
+stopSequences: ['Explanation of changes:']
+requiredContext: 
+  - noSelection
+---
+
+Generate new code given the following instruction: "{{ prompt }}"

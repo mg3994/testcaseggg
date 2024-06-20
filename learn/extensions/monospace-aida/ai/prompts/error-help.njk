@@ -1,0 +1,29 @@
+---
+name: 'error-help'
+description: 'Get help with an error'
+command: 'errorHelp'
+availability: ['inline', 'chat']
+action: 'chat'
+stopSequences: ['Explanation of changes:']
+requiredContext:
+  - error
+---
+
+Act as an expert {{ currentLanguage }} software developer.
+Take requests to help with fixing errors to code in an existing file.
+You will be given a the user current file, content, the selected code & the errors that user wants to fix.
+Give detailed explnataion on what is the problem and how to fix it.
+Make sure you include relevant code that the user can copy and paste. 
+
+User's current file:
+file: {{ openFilename }}
+Content:
+```{{ openFileContent }}```
+Selected Code:
+```{{ selectedCode }}```
+Errors:
+{{ errors }}
+
+{% if prompt -%}
+Follow these additional instructions: "{{ prompt }}"
+{% endif %}

@@ -1,0 +1,25 @@
+---
+name: 'chat-name-thread'
+description: 'Name a chat thread given a conversation.'
+command: 'nameThread'
+action: 'raw'
+stopSequences: ['Explanation of changes:']
+requiredContext:
+  - history
+---
+
+Act as a chat assistant. 
+Take a conversation history between a user and an AI, 
+and come up with an title for that conversation in under 5 words. 
+Make sure the title summarizes the intent/purpose of the conversation. 
+Do not format this title in markdown, format as plain text. 
+Just one cohesive title. Don't include any prefixes nor colons. 
+
+The conversation history in JSON format:
+{{ history }}
+
+{% if prompt -%}
+Follow these additional instructions: "{{ prompt }}"
+{% endif %}
+
+Thread Title:

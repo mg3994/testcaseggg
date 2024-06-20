@@ -1,0 +1,20 @@
+---
+name: 'chat-add-comments'
+description: 'Add comments to code'
+command: 'addComments'
+availability: ['chat']
+action: 'chat'
+stopSequences: ['Explanation of changes:']
+requiredContext:
+  - selection
+---
+
+Please add code comments to the following block of code.
+
+{% if prompt -%}
+Follow these additional instructions: "{{ prompt }}"
+{% endif %}
+
+```
+{{ selectedCode }}
+```

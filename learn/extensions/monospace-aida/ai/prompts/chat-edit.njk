@@ -1,0 +1,16 @@
+---
+name: 'chat-edit'
+description: 'Edit code'
+command: 'transform'
+availability: ['chat']
+action: 'chat'
+stopSequences: ['Explanation of changes:']
+requiredContext: 
+  - selection
+---
+
+Please change the code below in the following way: "{{ prompt }}"
+
+```
+{{ selectedCode }}
+```

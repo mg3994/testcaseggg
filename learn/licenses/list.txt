@@ -1,0 +1,485 @@
+yarn licenses v1.22.19
+├─ (BSD-2-Clause OR MIT OR Apache-2.0)
+│  └─ rc@1.2.8
+│     ├─ URL: https://github.com/dominictarr/rc.git
+│     ├─ VendorName: Dominic Tarr
+│     └─ VendorUrl: dominictarr.com
+├─ (MIT OR WTFPL)
+│  └─ expand-template@2.0.3
+│     ├─ URL: https://github.com/ralphtheninja/expand-template.git
+│     ├─ VendorName: LM
+│     └─ VendorUrl: https://github.com/ralphtheninja/expand-template
+├─ Apache-2.0
+│  ├─ detect-libc@2.0.1
+│  │  ├─ URL: git://github.com/lovell/detect-libc
+│  │  └─ VendorName: Lovell Fuller
+│  ├─ kerberos@2.0.1
+│  │  ├─ URL: https://github.com/mongodb-js/kerberos.git
+│  │  └─ VendorName: The MongoDB NodeJS Team
+│  └─ tunnel-agent@0.6.0
+│     ├─ URL: https://github.com/mikeal/tunnel-agent
+│     ├─ VendorName: Mikeal Rogers
+│     └─ VendorUrl: http://www.futurealoof.com
+├─ BSD-3-Clause
+│  ├─ @vscode/sqlite3@5.1.6-vscode
+│  │  ├─ URL: https://github.com/microsoft/vscode-node-sqlite3.git
+│  │  ├─ VendorName: Mapbox
+│  │  └─ VendorUrl: https://github.com/microsoft/vscode-node-sqlite3
+│  └─ ieee754@1.2.1
+│     ├─ URL: git://github.com/feross/ieee754.git
+│     ├─ VendorName: Feross Aboukhadijeh
+│     └─ VendorUrl: https://feross.org
+├─ ISC
+│  ├─ chownr@1.1.4
+│  │  ├─ URL: git://github.com/isaacs/chownr.git
+│  │  ├─ VendorName: Isaac Z. Schlueter
+│  │  └─ VendorUrl: http://blog.izs.me/
+│  ├─ chownr@2.0.0
+│  │  ├─ URL: git://github.com/isaacs/chownr.git
+│  │  ├─ VendorName: Isaac Z. Schlueter
+│  │  └─ VendorUrl: http://blog.izs.me/
+│  ├─ fs-minipass@2.1.0
+│  │  ├─ URL: git+https://github.com/npm/fs-minipass.git
+│  │  ├─ VendorName: Isaac Z. Schlueter
+│  │  └─ VendorUrl: https://github.com/npm/fs-minipass#readme
+│  ├─ graceful-fs@4.2.11
+│  │  └─ URL: https://github.com/isaacs/node-graceful-fs
+│  ├─ inherits@2.0.4
+│  │  └─ URL: git://github.com/isaacs/inherits
+│  ├─ ini@1.3.8
+│  │  ├─ URL: git://github.com/isaacs/ini.git
+│  │  ├─ VendorName: Isaac Z. Schlueter
+│  │  └─ VendorUrl: http://blog.izs.me/
+│  ├─ lru-cache@6.0.0
+│  │  ├─ URL: git://github.com/isaacs/node-lru-cache.git
+│  │  └─ VendorName: Isaac Z. Schlueter
+│  ├─ minipass@3.1.3
+│  │  ├─ URL: git+https://github.com/isaacs/minipass.git
+│  │  ├─ VendorName: Isaac Z. Schlueter
+│  │  └─ VendorUrl: http://blog.izs.me/
+│  ├─ once@1.4.0
+│  │  ├─ URL: git://github.com/isaacs/once
+│  │  ├─ VendorName: Isaac Z. Schlueter
+│  │  └─ VendorUrl: http://blog.izs.me/
+│  ├─ semver@7.5.4
+│  │  ├─ URL: https://github.com/npm/node-semver.git
+│  │  └─ VendorName: GitHub Inc.
+│  ├─ tar@6.1.12
+│  │  ├─ URL: https://github.com/npm/node-tar.git
+│  │  └─ VendorName: GitHub Inc.
+│  ├─ wrappy@1.0.2
+│  │  ├─ URL: https://github.com/npm/wrappy
+│  │  ├─ VendorName: Isaac Z. Schlueter
+│  │  └─ VendorUrl: https://github.com/npm/wrappy
+│  └─ yallist@4.0.0
+│     ├─ URL: git+https://github.com/isaacs/yallist.git
+│     ├─ VendorName: Isaac Z. Schlueter
+│     └─ VendorUrl: http://blog.izs.me/
+├─ LGPL-2.1+
+│  └─ jschardet@3.0.0
+│     ├─ URL: https://github.com/aadsm/jschardet.git
+│     └─ VendorName: António Afonso
+└─ MIT
+   ├─ @microsoft/1ds-core-js@3.2.13
+   │  ├─ URL: https://github.com/microsoft/ApplicationInsights-JS
+   │  ├─ VendorName: Microsoft Application Insights Team
+   │  └─ VendorUrl: https://github.com/microsoft/ApplicationInsights-JS#readme
+   ├─ @microsoft/1ds-post-js@3.2.13
+   │  ├─ URL: https://github.com/microsoft/ApplicationInsights-JS
+   │  ├─ VendorName: Microsoft Application Insights Team
+   │  └─ VendorUrl: https://github.com/microsoft/ApplicationInsights-JS#readme
+   ├─ @microsoft/applicationinsights-core-js@2.8.15
+   │  ├─ URL: https://github.com/microsoft/ApplicationInsights-JS/tree/master/shared/AppInsightsCore
+   │  ├─ VendorName: Microsoft Application Insights Team
+   │  └─ VendorUrl: https://github.com/microsoft/ApplicationInsights-JS#readme
+   ├─ @microsoft/applicationinsights-shims@2.0.2
+   │  ├─ URL: https://github.com/microsoft/ApplicationInsights-JS/tree/master/tools/shims
+   │  ├─ VendorName: Microsoft Application Insights Team
+   │  └─ VendorUrl: https://github.com/microsoft/ApplicationInsights-JS/tree/master/tools/shims
+   ├─ @microsoft/dynamicproto-js@1.1.9
+   │  ├─ URL: git+https://github.com/microsoft/DynamicProto-JS.git
+   │  ├─ VendorName: Microsoft Application Insights Team
+   │  └─ VendorUrl: https://github.com/microsoft/DynamicProto-JS#readme
+   ├─ @parcel/watcher@2.1.0
+   │  └─ URL: https://github.com/parcel-bundler/watcher.git
+   ├─ @tootallnate/once@3.0.0
+   │  ├─ URL: git://github.com/TooTallNate/once.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: http://n8.io/
+   ├─ @vscode/iconv-lite-umd@0.7.0
+   │  ├─ URL: git+https://github.com/Microsoft/vscode-iconv-lite-umd.git
+   │  ├─ VendorName: Microsoft
+   │  └─ VendorUrl: https://github.com/Microsoft/vscode-iconv-lite-umd#readme
+   ├─ @vscode/policy-watcher@1.1.6
+   │  ├─ URL: git+https://github.com/microsoft/vscode-policy-watcher.git
+   │  └─ VendorName: João Moreno
+   ├─ @vscode/proxy-agent@0.17.4
+   │  ├─ URL: git://github.com/microsoft/vscode-proxy-agent.git
+   │  └─ VendorUrl: https://github.com/microsoft/vscode-proxy-agent
+   ├─ @vscode/ripgrep@1.15.5
+   │  ├─ URL: https://github.com/microsoft/vscode-ripgrep
+   │  └─ VendorName: Rob Lourens
+   ├─ @vscode/spdlog@0.13.11
+   │  ├─ URL: git+https://github.com/microsoft/node-spdlog.git
+   │  ├─ VendorName: Microsoft
+   │  └─ VendorUrl: https://github.com/microsoft/node-spdlog#readme
+   ├─ @vscode/sudo-prompt@9.3.1
+   │  ├─ URL: git+https://github.com/bpasero/sudo-prompt.git
+   │  ├─ VendorName: Joran Dirk Greef
+   │  └─ VendorUrl: https://github.com/bpasero/sudo-prompt#readme
+   ├─ @vscode/vscode-languagedetection@1.0.21
+   │  ├─ URL: git+https://github.com/microsoft/vscode-languagedetection.git
+   │  ├─ VendorName: Tyler Leonhardt
+   │  └─ VendorUrl: https://github.com/microsoft/vscode-languagedetection#readme
+   ├─ @vscode/windows-mutex@0.4.4
+   │  ├─ URL: https://github.com/microsoft/node-windows-mutex.git
+   │  ├─ VendorName: Microsoft
+   │  └─ VendorUrl: https://github.com/microsoft/node-windows-mutex
+   ├─ @vscode/windows-process-tree@0.5.0
+   │  ├─ URL: git://github.com/microsoft/vscode-windows-process-tree.git
+   │  ├─ VendorName: Microsoft Corporation
+   │  └─ VendorUrl: https://github.com/microsoft/vscode-windows-process-tree
+   ├─ @vscode/windows-registry@1.1.0
+   │  ├─ URL: git+https://github.com/Microsoft/vscode-windows-registry.git
+   │  ├─ VendorName: Microsoft Corporation
+   │  └─ VendorUrl: https://github.com/Microsoft/vscode-windows-registry#readme
+   ├─ agent-base@4.2.0
+   │  ├─ URL: git://github.com/TooTallNate/node-agent-base.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: http://n8.io/
+   ├─ agent-base@4.3.0
+   │  ├─ URL: git://github.com/TooTallNate/node-agent-base.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: http://n8.io/
+   ├─ agent-base@6.0.1
+   │  ├─ URL: git://github.com/TooTallNate/node-agent-base.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: http://n8.io/
+   ├─ agent-base@7.1.0
+   │  ├─ URL: https://github.com/TooTallNate/proxy-agents.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: http://n8.io/
+   ├─ base64-js@1.5.1
+   │  ├─ URL: git://github.com/beatgammit/base64-js.git
+   │  ├─ VendorName: T. Jameson Little
+   │  └─ VendorUrl: https://github.com/beatgammit/base64-js
+   ├─ bindings@1.3.0
+   │  ├─ URL: git://github.com/TooTallNate/node-bindings.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: https://github.com/TooTallNate/node-bindings
+   ├─ bindings@1.5.0
+   │  ├─ URL: git://github.com/TooTallNate/node-bindings.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: https://github.com/TooTallNate/node-bindings
+   ├─ bl@4.1.0
+   │  ├─ URL: https://github.com/rvagg/bl.git
+   │  └─ VendorUrl: https://github.com/rvagg/bl
+   ├─ braces@3.0.2
+   │  ├─ URL: https://github.com/micromatch/braces.git
+   │  ├─ VendorName: Jon Schlinkert
+   │  └─ VendorUrl: https://github.com/micromatch/braces
+   ├─ buffer-crc32@0.2.13
+   │  ├─ URL: git://github.com/brianloveswords/buffer-crc32.git
+   │  ├─ VendorName: Brian J. Brennan
+   │  └─ VendorUrl: https://github.com/brianloveswords/buffer-crc32
+   ├─ buffer@5.7.1
+   │  ├─ URL: git://github.com/feross/buffer.git
+   │  ├─ VendorName: Feross Aboukhadijeh
+   │  └─ VendorUrl: https://github.com/feross/buffer
+   ├─ chrome-remote-interface@0.28.2
+   │  ├─ URL: git://github.com/cyrus-and/chrome-remote-interface.git
+   │  ├─ VendorName: Andrea Cardaci
+   │  └─ VendorUrl: https://github.com/cyrus-and/chrome-remote-interface
+   ├─ commander@2.11.0
+   │  ├─ URL: https://github.com/tj/commander.js.git
+   │  └─ VendorName: TJ Holowaychuk
+   ├─ debug@3.1.0
+   │  ├─ URL: git://github.com/visionmedia/debug.git
+   │  └─ VendorName: TJ Holowaychuk
+   ├─ debug@3.2.6
+   │  ├─ URL: git://github.com/visionmedia/debug.git
+   │  └─ VendorName: TJ Holowaychuk
+   ├─ debug@4.1.1
+   │  ├─ URL: git://github.com/visionmedia/debug.git
+   │  └─ VendorName: TJ Holowaychuk
+   ├─ debug@4.3.4
+   │  ├─ URL: git://github.com/debug-js/debug.git
+   │  └─ VendorName: Josh Junon
+   ├─ decompress-response@6.0.0
+   │  ├─ URL: https://github.com/sindresorhus/decompress-response.git
+   │  ├─ VendorName: Sindre Sorhus
+   │  └─ VendorUrl: https://sindresorhus.com
+   ├─ deep-extend@0.6.0
+   │  ├─ URL: git://github.com/unclechu/node-deep-extend.git
+   │  ├─ VendorName: Viacheslav Lotsmanov
+   │  └─ VendorUrl: https://github.com/unclechu/node-deep-extend
+   ├─ end-of-stream@1.4.4
+   │  ├─ URL: git://github.com/mafintosh/end-of-stream.git
+   │  ├─ VendorName: Mathias Buus
+   │  └─ VendorUrl: https://github.com/mafintosh/end-of-stream
+   ├─ es6-promise@4.2.4
+   │  ├─ URL: git://github.com/stefanpenner/es6-promise.git
+   │  ├─ VendorName: Yehuda Katz, Tom Dale, Stefan Penner and contributors
+   │  └─ VendorUrl: Conversion to ES6 API by Jake Archibald
+   ├─ es6-promisify@5.0.0
+   │  ├─ URL: https://github.com/digitaldesignlabs/es6-promisify.git
+   │  └─ VendorName: Mike Hall
+   ├─ fd-slicer@1.1.0
+   │  ├─ URL: git://github.com/andrewrk/node-fd-slicer.git
+   │  └─ VendorName: Andrew Kelley
+   ├─ file-uri-to-path@1.0.0
+   │  ├─ URL: git://github.com/TooTallNate/file-uri-to-path.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: https://github.com/TooTallNate/file-uri-to-path
+   ├─ fill-range@7.0.1
+   │  ├─ URL: https://github.com/jonschlinkert/fill-range.git
+   │  ├─ VendorName: Jon Schlinkert
+   │  └─ VendorUrl: https://github.com/jonschlinkert/fill-range
+   ├─ fs-constants@1.0.0
+   │  ├─ URL: https://github.com/mafintosh/fs-constants.git
+   │  ├─ VendorName: Mathias Buus
+   │  └─ VendorUrl: https://github.com/mafintosh/fs-constants
+   ├─ github-from-package@0.0.0
+   │  ├─ URL: git://github.com/substack/github-from-package.git
+   │  ├─ VendorName: James Halliday
+   │  └─ VendorUrl: https://github.com/substack/github-from-package
+   ├─ http-proxy-agent@2.1.0
+   │  ├─ URL: git://github.com/TooTallNate/node-http-proxy-agent.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: http://n8.io/
+   ├─ http-proxy-agent@7.0.0
+   │  ├─ URL: https://github.com/TooTallNate/proxy-agents.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: http://n8.io/
+   ├─ https-proxy-agent@2.2.4
+   │  ├─ URL: git://github.com/TooTallNate/node-https-proxy-agent.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: http://n8.io/
+   ├─ https-proxy-agent@5.0.0
+   │  ├─ URL: git://github.com/TooTallNate/node-https-proxy-agent.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: http://n8.io/
+   ├─ https-proxy-agent@7.0.1
+   │  ├─ URL: https://github.com/TooTallNate/proxy-agents.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: http://n8.io/
+   ├─ ip@2.0.0
+   │  ├─ URL: http://github.com/indutny/node-ip.git
+   │  ├─ VendorName: Fedor Indutny
+   │  └─ VendorUrl: https://github.com/indutny/node-ip
+   ├─ is-extglob@2.1.1
+   │  ├─ URL: https://github.com/jonschlinkert/is-extglob.git
+   │  ├─ VendorName: Jon Schlinkert
+   │  └─ VendorUrl: https://github.com/jonschlinkert/is-extglob
+   ├─ is-glob@4.0.3
+   │  ├─ URL: https://github.com/micromatch/is-glob.git
+   │  ├─ VendorName: Jon Schlinkert
+   │  └─ VendorUrl: https://github.com/micromatch/is-glob
+   ├─ is-number@7.0.0
+   │  ├─ URL: https://github.com/jonschlinkert/is-number.git
+   │  ├─ VendorName: Jon Schlinkert
+   │  └─ VendorUrl: https://github.com/jonschlinkert/is-number
+   ├─ micromatch@4.0.5
+   │  ├─ URL: https://github.com/micromatch/micromatch.git
+   │  ├─ VendorName: Jon Schlinkert
+   │  └─ VendorUrl: https://github.com/micromatch/micromatch
+   ├─ mimic-response@3.1.0
+   │  ├─ URL: https://github.com/sindresorhus/mimic-response.git
+   │  ├─ VendorName: Sindre Sorhus
+   │  └─ VendorUrl: https://sindresorhus.com
+   ├─ minimist@1.2.7
+   │  ├─ URL: git://github.com/minimistjs/minimist.git
+   │  ├─ VendorName: James Halliday
+   │  └─ VendorUrl: https://github.com/minimistjs/minimist
+   ├─ minizlib@2.1.2
+   │  ├─ URL: git+https://github.com/isaacs/minizlib.git
+   │  ├─ VendorName: Isaac Z. Schlueter
+   │  └─ VendorUrl: http://blog.izs.me/
+   ├─ mkdirp-classic@0.5.3
+   │  ├─ URL: https://github.com/mafintosh/mkdirp-classic.git
+   │  ├─ VendorName: Mathias Buus
+   │  └─ VendorUrl: https://github.com/mafintosh/mkdirp-classic
+   ├─ mkdirp@0.5.6
+   │  ├─ URL: https://github.com/substack/node-mkdirp.git
+   │  ├─ VendorName: James Halliday
+   │  └─ VendorUrl: http://substack.net
+   ├─ mkdirp@1.0.4
+   │  └─ URL: https://github.com/isaacs/node-mkdirp.git
+   ├─ ms@2.0.0
+   │  └─ URL: https://github.com/zeit/ms.git
+   ├─ ms@2.1.2
+   │  └─ URL: https://github.com/zeit/ms.git
+   ├─ ms@2.1.3
+   │  └─ URL: https://github.com/vercel/ms.git
+   ├─ nan@2.17.0
+   │  └─ URL: git://github.com/nodejs/nan.git
+   ├─ napi-build-utils@1.0.2
+   │  ├─ URL: git+https://github.com/inspiredware/napi-build-utils.git
+   │  ├─ VendorName: Jim Schlight
+   │  └─ VendorUrl: https://github.com/inspiredware/napi-build-utils#readme
+   ├─ native-is-elevated@0.7.0
+   │  ├─ URL: git+https://github.com/arkon/native-is-elevated.git
+   │  ├─ VendorName: Eugene Cheung
+   │  └─ VendorUrl: https://github.com/arkon/native-is-elevated#readme
+   ├─ native-keymap@3.3.4
+   │  ├─ URL: git+https://github.com/Microsoft/node-native-keymap.git
+   │  ├─ VendorName: Microsoft Corporation
+   │  └─ VendorUrl: https://github.com/Microsoft/node-native-keymap#readme
+   ├─ native-watchdog@1.4.2
+   │  ├─ URL: git+https://github.com/Microsoft/node-native-watchdog.git
+   │  ├─ VendorName: Microsoft Corporation
+   │  └─ VendorUrl: https://github.com/Microsoft/node-native-watchdog#readme
+   ├─ node-abi@3.8.0
+   │  ├─ URL: https://github.com/lgeiger/node-abi.git
+   │  ├─ VendorName: Lukas Geiger
+   │  └─ VendorUrl: https://github.com/lgeiger/node-abi#readme
+   ├─ node-addon-api@3.1.0
+   │  ├─ URL: git://github.com/nodejs/node-addon-api.git
+   │  └─ VendorUrl: https://github.com/nodejs/node-addon-api
+   ├─ node-addon-api@3.2.1
+   │  ├─ URL: git://github.com/nodejs/node-addon-api.git
+   │  └─ VendorUrl: https://github.com/nodejs/node-addon-api
+   ├─ node-addon-api@4.2.0
+   │  ├─ URL: git://github.com/nodejs/node-addon-api.git
+   │  └─ VendorUrl: https://github.com/nodejs/node-addon-api
+   ├─ node-addon-api@4.3.0
+   │  ├─ URL: git://github.com/nodejs/node-addon-api.git
+   │  └─ VendorUrl: https://github.com/nodejs/node-addon-api
+   ├─ node-addon-api@6.0.0
+   │  ├─ URL: git://github.com/nodejs/node-addon-api.git
+   │  └─ VendorUrl: https://github.com/nodejs/node-addon-api
+   ├─ node-gyp-build@4.3.0
+   │  ├─ URL: https://github.com/prebuild/node-gyp-build.git
+   │  ├─ VendorName: Mathias Buus
+   │  └─ VendorUrl: https://github.com/prebuild/node-gyp-build
+   ├─ node-pty@1.1.0-beta1
+   │  ├─ URL: git://github.com/microsoft/node-pty.git
+   │  ├─ VendorName: Microsoft Corporation
+   │  └─ VendorUrl: https://github.com/microsoft/node-pty
+   ├─ pend@1.2.0
+   │  ├─ URL: git://github.com/andrewrk/node-pend.git
+   │  └─ VendorName: Andrew Kelley
+   ├─ picomatch@2.3.1
+   │  ├─ URL: https://github.com/micromatch/picomatch.git
+   │  ├─ VendorName: Jon Schlinkert
+   │  └─ VendorUrl: https://github.com/micromatch/picomatch
+   ├─ prebuild-install@7.1.1
+   │  ├─ URL: https://github.com/prebuild/prebuild-install.git
+   │  ├─ VendorName: Mathias Buus
+   │  └─ VendorUrl: https://github.com/prebuild/prebuild-install
+   ├─ proxy-from-env@1.1.0
+   │  ├─ URL: https://github.com/Rob--W/proxy-from-env.git
+   │  ├─ VendorName: Rob Wu
+   │  └─ VendorUrl: https://github.com/Rob--W/proxy-from-env#readme
+   ├─ pump@3.0.0
+   │  ├─ URL: git://github.com/mafintosh/pump.git
+   │  └─ VendorName: Mathias Buus Madsen
+   ├─ readable-stream@3.6.0
+   │  └─ URL: git://github.com/nodejs/readable-stream
+   ├─ safe-buffer@5.2.1
+   │  ├─ URL: git://github.com/feross/safe-buffer.git
+   │  ├─ VendorName: Feross Aboukhadijeh
+   │  └─ VendorUrl: https://github.com/feross/safe-buffer
+   ├─ simple-concat@1.0.1
+   │  ├─ URL: git://github.com/feross/simple-concat.git
+   │  ├─ VendorName: Feross Aboukhadijeh
+   │  └─ VendorUrl: https://github.com/feross/simple-concat
+   ├─ simple-get@4.0.1
+   │  ├─ URL: git://github.com/feross/simple-get.git
+   │  ├─ VendorName: Feross Aboukhadijeh
+   │  └─ VendorUrl: https://github.com/feross/simple-get
+   ├─ smart-buffer@4.2.0
+   │  ├─ URL: https://github.com/JoshGlazebrook/smart-buffer.git
+   │  ├─ VendorName: Josh Glazebrook
+   │  └─ VendorUrl: https://github.com/JoshGlazebrook/smart-buffer/
+   ├─ socks-proxy-agent@8.0.1
+   │  ├─ URL: https://github.com/TooTallNate/proxy-agents.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: http://n8.io/
+   ├─ socks@2.7.1
+   │  ├─ URL: https://github.com/JoshGlazebrook/socks.git
+   │  ├─ VendorName: Josh Glazebrook
+   │  └─ VendorUrl: https://github.com/JoshGlazebrook/socks/
+   ├─ string_decoder@1.3.0
+   │  ├─ URL: git://github.com/nodejs/string_decoder.git
+   │  └─ VendorUrl: https://github.com/nodejs/string_decoder
+   ├─ strip-json-comments@2.0.1
+   │  ├─ URL: https://github.com/sindresorhus/strip-json-comments.git
+   │  ├─ VendorName: Sindre Sorhus
+   │  └─ VendorUrl: sindresorhus.com
+   ├─ tar-fs@2.1.1
+   │  ├─ URL: https://github.com/mafintosh/tar-fs.git
+   │  ├─ VendorName: Mathias Buus
+   │  └─ VendorUrl: https://github.com/mafintosh/tar-fs
+   ├─ tar-stream@2.2.0
+   │  ├─ URL: git+https://github.com/mafintosh/tar-stream.git
+   │  ├─ VendorName: Mathias Buus
+   │  └─ VendorUrl: https://github.com/mafintosh/tar-stream
+   ├─ tas-client-umd@0.1.8
+   │  └─ VendorName: Microsoft
+   ├─ to-regex-range@5.0.1
+   │  ├─ URL: https://github.com/micromatch/to-regex-range.git
+   │  ├─ VendorName: Jon Schlinkert
+   │  └─ VendorUrl: https://github.com/micromatch/to-regex-range
+   ├─ util-deprecate@1.0.2
+   │  ├─ URL: git://github.com/TooTallNate/util-deprecate.git
+   │  ├─ VendorName: Nathan Rajlich
+   │  └─ VendorUrl: https://github.com/TooTallNate/util-deprecate
+   ├─ v8-inspect-profiler@0.1.0
+   │  ├─ URL: git+https://github.com/jrieken/v8-inspect-profiler.git
+   │  └─ VendorName: jrieken
+   ├─ vscode-oniguruma@1.7.0
+   │  ├─ URL: https://github.com/microsoft/vscode-oniguruma
+   │  └─ VendorName: Microsoft Corporation
+   ├─ vscode-regexpp@3.1.0
+   │  ├─ URL: git+https://github.com/mysticatea/regexpp.git
+   │  ├─ VendorName: Toru Nagashima
+   │  └─ VendorUrl: https://github.com/mysticatea/regexpp#readme
+   ├─ vscode-textmate@9.0.0
+   │  ├─ URL: https://github.com/microsoft/vscode-textmate
+   │  └─ VendorName: Microsoft Corporation
+   ├─ windows-foreground-love@0.5.0
+   │  ├─ URL: git+https://github.com/the-ress/node-windows-foreground-love.git
+   │  ├─ VendorName: Tereza Tomcova
+   │  └─ VendorUrl: https://github.com/the-ress/node-windows-foreground-love#readme
+   ├─ ws@7.4.6
+   │  ├─ URL: https://github.com/websockets/ws.git
+   │  ├─ VendorName: Einar Otto Stangvik
+   │  └─ VendorUrl: https://github.com/websockets/ws
+   ├─ xterm-addon-canvas@0.6.0-beta.27
+   │  ├─ URL: https://github.com/xtermjs/xterm.js/tree/master/addons/xterm-addon-canvas
+   │  ├─ VendorName: The xterm.js authors
+   │  └─ VendorUrl: https://xtermjs.org/
+   ├─ xterm-addon-image@0.6.0-beta.21
+   │  ├─ URL: https://github.com/xtermjs/xterm.js
+   │  ├─ VendorName: The xterm.js authors
+   │  └─ VendorUrl: https://xtermjs.org/
+   ├─ xterm-addon-search@0.14.0-beta.27
+   │  ├─ URL: https://github.com/xtermjs/xterm.js/tree/master/addons/xterm-addon-search
+   │  ├─ VendorName: The xterm.js authors
+   │  └─ VendorUrl: https://xtermjs.org/
+   ├─ xterm-addon-serialize@0.12.0-beta.26
+   │  ├─ URL: https://github.com/xtermjs/xterm.js/tree/master/addons/xterm-addon-serialize
+   │  ├─ VendorName: The xterm.js authors
+   │  └─ VendorUrl: https://xtermjs.org/
+   ├─ xterm-addon-unicode11@0.7.0-beta.26
+   │  ├─ URL: https://github.com/xtermjs/xterm.js/tree/master/addons/xterm-addon-unicode11
+   │  ├─ VendorName: The xterm.js authors
+   │  └─ VendorUrl: https://xtermjs.org/
+   ├─ xterm-addon-webgl@0.17.0-beta.26
+   │  ├─ URL: https://github.com/xtermjs/xterm.js/tree/master/addons/xterm-addon-webgl
+   │  ├─ VendorName: The xterm.js authors
+   │  └─ VendorUrl: https://xtermjs.org/
+   ├─ xterm-headless@5.4.0-beta.27
+   │  └─ URL: https://github.com/xtermjs/xterm.js
+   ├─ xterm@5.4.0-beta.27
+   │  └─ URL: https://github.com/xtermjs/xterm.js
+   ├─ yauzl@2.10.0
+   │  ├─ URL: https://github.com/thejoshwolfe/yauzl.git
+   │  ├─ VendorName: Josh Wolfe
+   │  └─ VendorUrl: https://github.com/thejoshwolfe/yauzl
+   └─ yazl@2.4.3
+      ├─ URL: https://github.com/thejoshwolfe/yazl.git
+      ├─ VendorName: Josh Wolfe
+      └─ VendorUrl: https://github.com/thejoshwolfe/yazl
+Done in 0.34s.

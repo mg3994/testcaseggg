@@ -1,0 +1,264 @@
+{
+  "name": "monospace",
+  "publisher": "google",
+  "displayName": "Project IDX (Extension)",
+  "description": "Main internal extension for Project IDX",
+  "version": "0.1.1",
+  "engines": {
+    "vscode": "^1.65.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "enabledApiProposals": [
+    "inlineCompletionsAdditions",
+    "contribEditorContentMenu"
+  ],
+  "activationEvents": [
+    "onCommand:monospace.showWebPreview",
+    "onCommand:monospace.showEmulatorPreview",
+    "onStartupFinished"
+  ],
+  "main": "dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Project IDX",
+      "properties": {
+        "IDX.aI.enableInlineCompletion": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable inline code completion as you type"
+        },
+        "IDX.aI.enableCodebaseIndexing": {
+          "type": "boolean",
+          "default": false,
+          "description": "Augment AI responses with information from your local codebase"
+        },
+        "IDX.corgiMode": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable feline and canine coding assistants (Corgi mode)"
+        },
+        "IDX.webDevTools": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable Chrome DevTools for web preview (browser reload required)"
+        },
+        "IDX.enableIntegrationsPanel": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show new integrations panel (browser reload required)"
+        }
+      }
+    },
+    "jsonValidation": [
+      {
+        "fileMatch": "monospace.json",
+        "url": "./monospaceschema.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "monospace.showSharingDialog",
+        "category": "Project IDX",
+        "title": "Share Workspace",
+        "icon": "$(live-share)"
+      },
+      {
+        "command": "monospace.hardRestart",
+        "category": "Project IDX",
+        "title": "Hard Restart Previews",
+        "icon": "$(debug-rerun)"
+      },
+      {
+        "command": "monospace.reloadWeb",
+        "category": "Project IDX",
+        "title": "Reload Web Preview",
+        "icon": "$(symbol-event)"
+      },
+      {
+        "command": "monospace.reloadEmulator",
+        "category": "Project IDX",
+        "title": "Reload Android Emulator",
+        "icon": "$(symbol-event)",
+        "enablement": "monospace.emulators.enabled"
+      },
+      {
+        "command": "monospace.showWebPreview",
+        "category": "Project IDX",
+        "title": "Show Web Preview",
+        "icon": "$(browser)"
+      },
+      {
+        "command": "idx.openLighthouse",
+        "category": "Project IDX",
+        "title": "Generate a Lighthouse Report",
+        "icon": "$(lightbulb)"
+      },
+      {
+        "command": "monospace.showEmulatorPreview",
+        "category": "Project IDX",
+        "title": "Show Android Preview",
+        "icon": "$(mono-android)",
+        "enablement": "monospace.emulators.enabled"
+      },
+      {
+        "command": "monospace.envRestart",
+        "category": "Project IDX",
+        "title": "Rebuild Environment",
+        "icon": "$(extensions-refresh)",
+        "enablement": "monospace.nix.enabled"
+      },
+      {
+        "command": "monospace.generateAccessToken",
+        "category": "Project IDX",
+        "title": "Generate Access Token",
+        "icon": "$(globe)"
+      },
+      {
+        "command": "monospace.openTroubleshoot",
+        "category": "Project IDX",
+        "title": "Feedback - File Bug Report or Feature Request",
+        "icon": "$(feedback)"
+      },
+      {
+        "command": "monospace.onCreateHooks",
+        "category": "Project IDX",
+        "title": "Troubleshooting - Run onCreate Hooks",
+        "icon": "$(notebook-execute-all)",
+        "enablement": "monospace.hooks.onCreate.enabled"
+      },
+      {
+        "command": "monospace.onStartHooks",
+        "category": "Project IDX",
+        "title": "Troubleshooting - Run onStart Hooks",
+        "icon": "$(notebook-execute-all)",
+        "enablement": "monospace.hooks.onStart.enabled"
+      },
+      {
+        "command": "monospace.showVersion",
+        "category": "Project IDX",
+        "title": "Troubleshooting - Show Version",
+        "icon": "$(info)"
+      },
+      {
+        "command": "monospace.showOutputLog",
+        "category": "Project IDX",
+        "title": "Troubleshooting - Show IDX Output Log",
+        "icon": "$(info)"
+      }
+    ],
+    "menus": {
+      "editor/content": [
+        {
+          "command": "monospace.envRestart",
+          "when": "monospace.devNixModified && !monospace.devNixHasErrors && resourcePath in monospace.devNixPath"
+        }
+      ]
+    },
+    "icons": {
+      "mono-monospace": {
+        "description": "Monospace icon",
+        "default": {
+          "fontPath": "dist/resources/monicons.woff",
+          "fontCharacter": "\\F102"
+        }
+      }
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "monospace-container",
+          "title": "Project IDX",
+          "icon": "$(mono-monospace)"
+        }
+      ]
+    },
+    "views": {
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "corgiModeView",
+          "name": "Corgi Mode",
+          "when": "config.IDX.corgiMode"
+        }
+      ],
+      "monospace-container": [
+        {
+          "type": "webview",
+          "id": "monospace.menu",
+          "name": "Project IDX"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "build-prep": "rm -rf dist && mkdir -p dist",
+    "start": "export NODE_ENV=development && npm run build-prep && NODE_OPTIONS=\"--max-old-space-size=8192\" webpack --watch",
+    "start:monoception": "export MONOCEPTION=1 && npm start",
+    "test": "jest",
+    "build": "npm run build-prep && webpack --mode production --devtool hidden-source-map",
+    "build:monoception": "./build.sh && ./monoception-push.sh",
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "dist-vsix": "yes | vsce package",
+    "package": "npm run build"
+  },
+  "devDependencies": {
+    "@sinonjs/fake-timers": "^10.0.2",
+    "@teamsupercell/typings-for-css-modules-loader": "^2.5.1",
+    "@types/glob": "^7.2.0",
+    "@types/jest": "^29.4.1",
+    "@types/jsdom": "^21.1.6",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "16.x",
+    "@types/sinonjs__fake-timers": "^8.1.2",
+    "@types/tail": "^2.2.1",
+    "@types/vscode": "^1.65.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "@vscode/test-electron": "^2.1.5",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.18.0",
+    "glob": "^8.0.3",
+    "jest": "^29.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss-loader": "^7.0.0",
+    "prettier": "^2.7.1",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.52.0",
+    "sass-loader": "^13.0.0",
+    "ts-jest": "^29.0.5",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-shell-plugin-next": "^2.3.1"
+  },
+  "dependencies": {
+    "@google-cloud/apikeys": "^1.1.0",
+    "@google-cloud/compute": "^4.4.0",
+    "@google-cloud/run": "^1.2.0",
+    "@google-cloud/service-management": "^2.2.0",
+    "@vscode/vsce": "^2.10.0",
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "bufferutil": "^4.0.7",
+    "canvas": "^2.11.2",
+    "classnames": "^2.3.1",
+    "comment-json": "^4.2.3",
+    "jimp": "^0.22.10",
+    "jsdom": "^23.0.1",
+    "lodash": "^4.17.21",
+    "monospace-states": "file:../monospace-states",
+    "react-markdown": "^8.0.7",
+    "react-shared": "file:../react-shared",
+    "request": "^2.88.2",
+    "tail": "^2.2.4",
+    "utf-8-validate": "^6.0.3",
+    "ws": "^8.12.1",
+    "zod": "^3.23.4"
+  }
+}

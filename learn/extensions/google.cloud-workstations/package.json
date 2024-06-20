@@ -1,0 +1,141 @@
+{
+  "name": "cloud-workstations",
+  "displayName": "Google Cloud Workstations",
+  "description": "An extension providing core functionality for Google Cloud Workstations.",
+  "version": "0.0.1",
+  "publisher": "google",
+  "license": "Apache-2.0",
+  "engines": {
+    "vscode": "^1.66.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cloudWorkstations.portsView.openSettings",
+        "title": "Configure Ports Viewer",
+        "category": "Cloud Workstations",
+        "icon": "$(gear)"
+      },
+      {
+        "command": "cloudWorkstations.portsView.focusPane",
+        "title": "Focus Ports Viewer",
+        "category": "Cloud Workstations"
+      }
+    ],
+    "configuration": {
+      "title": "Google Cloud Workstations",
+      "properties": {
+        "cloudWorkstations.portsView.enabled": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "default": null,
+          "description": "Enable the ports preview panel and related notifications functionality."
+        },
+        "cloudWorkstations.portsView.notifyOnListen": {
+          "type": "boolean",
+          "default": true,
+          "description": "Display notifications when new listening ports are detected."
+        },
+        "cloudWorkstations.portsView.autoRemoveAge": {
+          "type": "number",
+          "default": 604800,
+          "description": "Inactivity duration in seconds until unused ports are automatically removed from the table."
+        },
+        "cloudWorkstations.portsView.ignoredPortNumbers": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 65535
+          },
+          "default": [
+            80
+          ],
+          "description": "Port numbers that are excluded from display in the ports table or any notifications."
+        }
+      }
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "cloudWorkstations.portsView.openSettings",
+          "group": "navigation",
+          "when": "view === cloudWorkstations.portsViewView"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "panel": [
+        {
+          "id": "portsViewPanel",
+          "title": "Ports",
+          "icon": "$(vm-connect)"
+        }
+      ]
+    },
+    "views": {
+      "portsViewPanel": [
+        {
+          "id": "cloudWorkstations.portsViewView",
+          "name": "Ports",
+          "type": "webview",
+          "when": "config.cloudWorkstations.portsView.enabled"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "vsce-package": "vsce package --yarn --allow-missing-repository --no-dependencies",
+    "clean": "rm -rf out/ && rm -rf dist/ && rm -rf .vscode-test && rm -f cloudworkstations*.{vsix,tgz}",
+    "presubmit": "yarn compile-tests && yarn lint && yarn vsce-package",
+    "publish": "yarn vsce-package && cp cloudworkstations-*.vsix ../third_party/code-oss-plugins/"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/react-dom": "^18.2.1",
+    "@types/vscode": "^1.66.0",
+    "@types/vscode-webview": "^1.57.1",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "@vscode/test-electron": "^2.2.3",
+    "@vscode/vsce": "^2.19.0",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.34.0",
+    "glob": "^8.1.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "mocha": "^10.2.0",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-license-plugin": "^4.2.2"
+  },
+  "dependencies": {
+    "@vscode/codicons": "^0.0.33",
+    "@vscode/webview-ui-toolkit": "^1.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "packageManager": "yarn@3.5.1"
+}
